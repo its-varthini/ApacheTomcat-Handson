@@ -43,4 +43,5 @@ sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
 
 ```
 #### After copying the Artifact in webapps folder we can see the deployed application
+git clone https://github.com/jaiswaladi246/Petclinic.git
 ![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/2.png?raw=true)
