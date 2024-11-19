@@ -39,13 +39,14 @@ comment:
 sudo stopTomcat
 sudo startTomcat
 ```
-## Commands To create war file and deploy to Tomcat:
+## Commands To create war file and deploy on Tomcat:
 ```shell
 git clone https://github.com/jaiswaladi246/Petclinic.git
 mvn clean package
 
 sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
-hit the publicIP:8080 you will see the application displayed on the browser
+
+# hit the publicIP:8080 you will see the application displayed on the browser
 ```
 
 #### After copying the Artifact in webapps folder we can see the deployed application
