@@ -18,6 +18,18 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
+### **--- Change port for JENKINS on ubuntu ---**
+```
+sudo systemctl stop jenkins
+cd /etc/default
+vi jenkins # set HTTP_PORT=9090
+cd /lib/systemd/system
+vi jenkins.service # set PORT = 9090
+sudo systemctl daemon-reload
+sudo systemctl restart jenkins
+sudo systemctl status jenkins
+```
+
 ### **--- INSTALL JENKINS ON LINUX METHOD -2 ---**
 
 ```shell
