@@ -29,3 +29,14 @@ sudo systemctl restart docker
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
 ```
+# Method 2
+
+1. download the script 
+  curl -fsSL https://get.docker.com -o install-docker.sh
+
+2. run the script either as root, or using sudo to perform the installation.
+ ```
+  sudo sh install-docker.sh
+  sudo chmod 666 /var/run/docker.sock
+  docker info
+```
