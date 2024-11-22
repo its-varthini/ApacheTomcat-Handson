@@ -29,7 +29,7 @@ sudo systemctl restart docker
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
 ```
-# Method 2
+## Method 2
 
 1. download the script 
  ```
