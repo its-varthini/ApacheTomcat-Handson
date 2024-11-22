@@ -18,12 +18,19 @@ pipeline {
             }
         }
         
-        stage('Build') {
+        stage('compile') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn compile'
             }
         }
-        
+
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+       
+            
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar') {
@@ -32,6 +39,12 @@ pipeline {
                     -Dsonar.projectKey=Petclinic '''
     
                 }
+            }
+        }
+
+         stage('Build') {
+            steps {
+                sh 'mvn clean package'
             }
         }
         
