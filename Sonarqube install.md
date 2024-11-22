@@ -3,11 +3,16 @@
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 ```
 **To configure sonarqube in jenkins follow bellow steps**
+1) download all the below plugins in jenkins
 
-1.plugin SonarQube Scanner
+   plugin SonarQube Scanner
 
-2.Sonar Quality GatesVersion
+   Sonar Quality GatesVersion
 
-Eclipse Temurin installer
+   Eclipse Temurin installer (jdk17)
 
-Maven Integration plugin
+   Maven Integration plugin (maven3)
+
+2) Tools configure : jdk , sonarscanner , maven
+
+3)system configuration : Do the SonarQube installations in system configuration section.
