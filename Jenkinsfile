@@ -18,12 +18,7 @@ pipeline {
             }
         }
         
-        stage('Build') {
-            steps {
-                sh 'mvn clean package'
-            }
-        }
-        
+              
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar') {
@@ -34,6 +29,21 @@ pipeline {
                 }
             }
         }
+
+         stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+         stage('deploy to nexus') {
+            steps {
+               
+               withMaven(globalMavenSettingsConfig: 'fbb4f800-3272-499b-b671-0d8db145f2df', jdk: 'jdk17', maven: 'maven3', mavenSettingsConfig: '', traceability: true) {
+               sh 'mvn deploy -DskipTests=true'
+               }
+            }
+        }
         
-    }
+  }
 }
