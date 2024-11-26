@@ -23,3 +23,5 @@ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 3)system configuration : Do the SonarQube installations in system configuration section.This need a token generated from sonarQube server for accessing it from jenkins.
  
 refer **SonarQube_jenkins_setup.docx** for screenshots.
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/2.png?raw=true)
+![alt text](https://github.com/its-varthini/Installation_Setup_Guide/blob/main/SonarQube-scanner/sonarQube.png)
