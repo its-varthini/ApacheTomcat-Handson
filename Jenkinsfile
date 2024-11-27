@@ -64,7 +64,7 @@ pipeline {
         
          stage("TRIVY scan"){
             steps{
-                sh " trivy image varthinidochub/petclinic:latest > trivy-report.txt "
+              sh " trivy image varthinidochub/petclinic:latest -f json -o Trivy-results.json "
             }
         }
         
