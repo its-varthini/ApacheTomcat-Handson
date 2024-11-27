@@ -49,6 +49,36 @@ pipeline {
                }
             }
         }
+
+        stage("Docker Build & tag"){
+            steps{
+                script{
+                  withDockerRegistry(credentialsId: 'dockercred', toolName: 'docker') {
+                      
+                      sh 'docker build -t varthinidochub/petclinic:latest .'
+   
+                  }
+                }
+            }
+        }
+        
+         stage("TRIVY scan"){
+            steps{
+                sh " trivy image varthinidochub/petclinic:latest > trivy-report.txt "
+            }
+        }
+        
+        stage("Docker Push"){
+            steps{
+                script{
+                  withDockerRegistry(credentialsId: 'dockercred', toolName: 'docker') {
+                      
+                      sh 'docker push varthinidochub/petclinic:latest'
+   
+                  }
+                }
+            }
+        }
       
        
   }
