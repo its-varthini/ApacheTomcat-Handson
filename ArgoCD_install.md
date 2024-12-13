@@ -24,4 +24,4 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 reflink : https://blog.kubekode.org/setup-minikube-on-aws-ec2-instance
           
-          https://www.fosstechnix.com/how-to-install-argocd-on-minikube/
+https://www.fosstechnix.com/how-to-install-argocd-on-minikube/
