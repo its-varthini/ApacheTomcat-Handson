@@ -13,7 +13,13 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2
 kubectl get all -n argocd
 ```
 **Access ArgoCD UI on Browser**
+By doing this The ArgoCD UI will be available at http://localhost/IP:8080
 ```
 kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
 ```
-by doing this The ArgoCD UI will be available at http://localhost/IP:8080
+Get the initial password for the admin user to log in
+```
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
+reflink : https://blog.kubekode.org/setup-minikube-on-aws-ec2-instance
+          https://www.fosstechnix.com/how-to-install-argocd-on-minikube/
