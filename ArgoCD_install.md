@@ -25,3 +25,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 reflink : https://blog.kubekode.org/setup-minikube-on-aws-ec2-instance
           
 https://www.fosstechnix.com/how-to-install-argocd-on-minikube/
+
+**To access the application**
+```
+ kubectl port-forward --address 0.0.0.0 svc/petclinic 9000:80
+```
+By doing this the application will be available at http://localhost/IP:9000
