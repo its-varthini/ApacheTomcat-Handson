@@ -10,10 +10,13 @@ sudo usermod -aG docker $USER && newgrp docker
 minikube start --driver=docker
 ```
 **To check minikube version on Ubuntu**
-```minikube version```
+```
+minikube version
+```
 **To Check the status of Minikube**
+```
 minikube status
-
+```
 **To install Kubectl**
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
