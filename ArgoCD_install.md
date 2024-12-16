@@ -6,6 +6,8 @@
 
 3)Kubectl installed
 
+![Main](https://github.com/user-attachments/assets/a55cfe64-a93f-47bd-99ec-69fe94228767)
+
 **steps to install ArgoCD**
 ```
 kubectl create ns argocd
