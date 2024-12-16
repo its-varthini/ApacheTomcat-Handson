@@ -41,3 +41,6 @@ add these below code blocks in the pom.xml file after packaging the application 
 </plugin>
 ```
 ![alt text](https://github.com/its-varthini/Installation_Setup_Guide/blob/main/SonarQube-scanner/sonarJacoco.png)
+
+
+![stages](https://github.com/user-attachments/assets/40e41884-5bc8-41ab-850b-1f67692b18bc)
