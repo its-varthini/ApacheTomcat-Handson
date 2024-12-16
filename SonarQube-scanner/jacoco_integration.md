@@ -1,4 +1,4 @@
-**Steps to integrate Jacoco code coverage with sonarqube and Jenkins** 
+**Steps to publish Jacoco code coverage to sonarqube using Jenkins** 
 
 add these below code blocks in the pom.xml file after packaging the application the code coverage report will be published to sonarqube.
 ```
