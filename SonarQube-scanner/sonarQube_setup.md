@@ -26,4 +26,3 @@ refer **SonarQube_jenkins_setup.docx** for screenshots.
 
 ![alt text](https://github.com/its-varthini/Installation_Setup_Guide/blob/main/SonarQube-scanner/sonarQube.png)
 
-![Main](https://github.com/user-attachments/assets/a55cfe64-a93f-47bd-99ec-69fe94228767)
