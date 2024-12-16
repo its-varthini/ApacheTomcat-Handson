@@ -40,3 +40,4 @@ add these below code blocks in the pom.xml file after packaging the application 
         </executions>
 </plugin>
 ```
+![alt text](https://github.com/its-varthini/Installation_Setup_Guide/blob/main/SonarQube-scanner/sonarJacoco.png)
