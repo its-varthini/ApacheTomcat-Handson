@@ -1,5 +1,5 @@
 **Steps to integrate Jacoco code coverage with sonarqube and Jenkins**    
-
+```
 <properties>
  <!-- JaCoCo Properties -->
     <jacoco.version>0.8.11</jacoco.version>
@@ -9,5 +9,5 @@
     <sonar.language>java</sonar.language>
     
   </properties>
-
+```
   
